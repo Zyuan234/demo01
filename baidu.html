@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="./css/hf.css">
+    <script src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=jbwwhuXgndoRFeRLSnyT8lxw1QqcFto5"></script>
+    <style>
+        body{
+        text-align: center;
+        width: 1200px;
+        margin: auto;
+    }
+        .div0 {
+            width: 100%;
+            height: 30px;
+            background-color: bisque;
+        }
+
+        .font {
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+        }
+
+        p {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .div0-1 {
+            float: left;
+        }
+
+        .div0-2 {
+            height: 20px;
+            width: 200px;
+            margin-left: 80px;
+            margin-top: 4px;
+        }
+
+        .div0-3 {
+            float: right;
+            margin-right: 80px;
+            margin-top: 4px;
+        }
+
+        .div4 {
+            height: 360px;
+            width: 100%;
+            margin-top: 50px;
+            background-color: rgb(228, 228, 228);
+        }
+
+        .div4-1 {
+            float: left;
+            width: 250px;
+            height: 250px;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .div4-2 {
+            width: 1200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .div4-3 {
+            width: 170px;
+            height: 100px;
+            margin-top: 10px;
+            border-top: 1px solid #000
+        }
+
+        .flor-font {
+            text-align: center;
+        }
+
+        #content {
+            margin: 30px 0 30px 0;
+        }
+
+        #content div div {
+            display: flex;
+            height: 300px;
+        }
+
+        #map {
+            width: 500px;
+            height: 300px;
+        }
+
+        #info {
+            width: 600px;
+            height: 300px;
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #info div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #info div img {
+            width: 25px;
+            height: 25px;
+        }
+
+        #info div p {
+            text-align: left;
+        }
+
+        #info p {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div0">
+        <div class="div0-0">
+            <div class="div0-1">
+                <div class="div0-2"><img src="img/01.png" style="width: 20px; height: 20px;">复仇者联盟</div>
+            </div>
+            <div class="div0-3">
+                <a href="home_page.html">首页</a>
+                <a href="listpage.html">新闻</a>
+                <a href="baidu.html">关于我们</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1 style="text-align: center;">关于我们</h1>
+        <div class="container_1">
+            <div>
+                <div id="map"></div>
+                <div id="info">
+                    <p>复仇者联盟以拯救世界为已任。创始人为钢铁侠、雷神托尔、绿巨人、蚁人和黄蜂侠。从一开始复仇者联盟的成员名单便不断的变动，第二期绿巨人就离队，改由美国队长加入。不断更改的成员名单已成为复仇者联盟的特点，但一个主题从未变过，那就是专与单一超级英雄无法应付的敌人作战。
+                    </p>
+                    <div>
+                        <img src="./img/4-1.png" alt="">
+                        <p>福州市仓山区万达广场B区</p>
+                    </div>
+                    <div>
+                        <img src="./img/4-2.png" alt="">
+                        <p>admin@example.com</p>
+                    </div>
+                    <div>
+                        <img src="./img/4-3.png" alt="">
+                        <p>400-123-4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="div4-1"><img src="img/4-1.png" style="height: 200px; width: 200px;">
+            <div>福州闽江学院</div>
+        </div>
+        <div class="div4-1"><img src="img/4-2.png" style="height: 200px; width: 200px;">
+            <div>23123412@qq.com</div>
+        </div>
+        <div class="div4-1"><img src="img/4-3.png" style="height: 200px; width: 200px;">
+            <div>023-3456-7891</div>
+        </div>
+        <div class="div4-1" style="margin-top: 20px;"><img src="img/4-4.png" style="height: 250px; width: 250px;">
+            <div class="flor-font">扫一扫，加入联盟</div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="div4-2">
+            <div class="div4-3">版权所有&copy;复仇者联盟</div>
+        </div>
+    </div>
+    <script>
+        var map = new BMapGL.Map('map');
+        map.centerAndZoom(new BMapGL.Point(119.173278, 26.0706), 12);
+        map.enableScrollWheelZoom(true);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业站首页</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body{
+        text-align: center;
+        width: 1200px;
+        margin: auto;
+    }
+        .div0 {
+            width: 1200px;
+            height: 30px;
+            background-color: bisque;
+        }
+
+        .font {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+        }
+
+        p {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .div0-1 {
+            float: left;
+        }
+
+        .div0-2 {
+            height: 20px;
+            width: 200px;
+            margin-left: 80px;
+            margin-top: 4px;
+        }
+
+        .div0-3 {
+            float: right;
+            margin-right: 80px;
+            margin-top: 4px;
+        }
+
+        .div1 {
+            text-align: center;
+            width: 1200px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        .div1-1 {
+            float: left;
+            width: 80px;
+            height: 80px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .div1-1>img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .div2 {
+            width: 1200px;
+            margin-top: 20px;
+        }
+
+        .div2-1 {
+            width: 500px;
+            height: 500px;
+            margin-top: 50px;
+            float: left;
+        }
+
+        .div2-1>img {
+            height: 450px;
+            width: 450px;
+        }
+
+        .div2-2 {
+            height: 500px;
+            width: 500px;
+            margin-top: 50px;
+            float: right;
+        }
+
+        .div3 {
+            width: 1200px;
+            margin-top: 20px;
+            background-color: seashell;
+        }
+
+        .div3-1 {
+            float: left;
+            width: 280px;
+            margin-left: 20px;
+        }
+
+        .div3-1>img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .div4 {
+            height: 360px;
+            width: 1200px;
+            margin-top: 50px;
+            background-color: rgb(228, 228, 228);
+        }
+
+        .div4-1 {
+            float: left;
+            width: 250px;
+            height: 250px;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .div4-2 {
+            width: 1200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .div4-3 {
+            width: 170px;
+            height: 100px;
+            margin-top: 10px;
+            border-top: 1px solid #000
+        }
+
+        .font-1 {
+            text-align: left;
+            font-size: 20px;
+            text-indent: 1cm;
+            font-family: FangSong;
+        }
+
+        .font-2 {
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 70px;    
+        }
+        .new-font{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .new-font1{
+            font-size: 12px;
+            text-align: left;
+            text-indent: 0.5cm;
+        }
+        .flor-font{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div0">
+        <div class="div0-0">
+            <div class="div0-1">
+                <div class="div0-2"><img src="img/01.png" style="width: 20px; height: 20px;">复仇者联盟</div>
+            </div>
+            <div class="div0-3">
+                <a href="home_page.html">首页</a>
+                <a href="listpage.html">新闻</a>
+                <a href="baidu.html">关于我们</a>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+
+    <div id="carousel_img">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+        
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/2-1.png" style="width: 100%; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2-3.png" style="width: 100%; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2-2.png" style="width: 100%; height: 400px;">
+            </div>
+            </div>
+        
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+        
+        </div>
+    </div>
+
+    <div style="width: 1200px; height: 20px; text-align: center; margin-top: 20px;">服务范围</div>
+    <div class="div1" style="display: flex; justify-content: center;">
+        <div class="div1-1">
+            <img src="img/1-1.png">
+            <div>拯救地球</div>
+        </div>
+        <div class="div1-1">
+            <img src="img/1-2.png">
+            <div>英雄合照</div>
+        </div>
+        <div class="div1-1">
+            <img src="img/1-3.png">
+            <div>寻找原石</div>
+        </div>
+        <div class="div1-1">
+            <img src="img/1-4.png">
+            <div>宇宙旅行</div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="font" style="width: 1200px;" style="display: flex; justify-content: center;">团队介绍</div>
+    <div class="div2">
+        <div class="div2-1"><img src="img/2-1.png"></div>
+        <div class="div2-2">
+            <p>美国队长 </p></br>
+            <div class="font-1">
+                美国队长是创作于二战时代的老牌英雄，最著名的反法西斯斗士之一。他本是瘦弱的青年史蒂夫·罗杰斯，接受了超级士兵改造手术，成为唯一成功的实验品，身体各项素质达到人类极限。他没有真正的超能 
+                力，虽然使用着坚不可摧的特制盾牌，但他最大的武器当属勇气、毅力和爱国精神。二战结束前夕他掉在冰海中休眠，几十年后才被现代英雄找到。苏醒的罗杰斯继续为了正义而战，但当代世界已经不像昔  日 
+                一样善恶分明，他也不时被人们视为落后于时代的活化石作为Marvel少数近乎道德完人的英雄之一！</div>
+            <div class="font-2">
+                能力：他拥有的财富是我们想象不到的。除了表面上的那些资产之外，更看重的则是他那天才般的头脑。初期的斯塔克靠的制造军火获得利润，在经历那次事件后，决定舍弃军火，改换新能源。而新能源也确实是发展的趋势。
+            </div>
+        </div>
+        <div class="div2-2"><img src="img/2-2.png" style="width: 500px; height: 480px;"></div>
+        <div class="div2-1" style="width: 450px; height: 480px;">
+            <p>钢铁侠</p></br>
+            <div class="font-1">开发军火起家的百万富翁花花公子托尼·斯达克，经历生死考验后决心把聪明才智用在造福人类上，为自己设计了一系列的高科技装甲，成为当时最受瞩目的英雄之一。
+                斯塔克精明风趣、过着令书中人和读者都羡慕的潇洒生活，但他同时也面临着身体和精神上的巨大压力；他为世界和平和整个超级英雄事业做出过不可磨灭的贡献，
+                又因为自信过甚而试图控制其他超人类，几乎身败名裂。他就是如此一个聪明、正直而又冲动、彷徨的商人，但其英雄本质仍然不会磨灭。</div>
+            <div class="font-2">能力：初期的斯塔克靠的制造军火获得利润，在经历那次事件后，决定舍弃军火，改换新能源。而新能源也确实是发展的趋势。</div>
+        </div>
+        <div class="div2-1"><img src="img/2-3.png"></div>
+        <div class="div2-2">
+            <p>绿巨人</p></br>
+            <div class="font-1">
+                浩克绿巨人浩克是60年代最早创作的漫画主角之一，是一位科学家布鲁斯·班纳受到自己开发的武器辐射而变异成的生物，具有非常巨大的力量，并以“越愤怒，越强壮”闻名。浩克代表了一种无视一切障碍、难以自控的野性，尤其是与循规蹈矩的文明人形成对比，因此他一直受到社会的敌视，与其他英雄的关系也时好时坏，但同时他仍然保持着锄强扶弱的英雄特质。浩克长期以来受到广泛的喜爱，人们把自己反抗权威、发泄不满的感情寄托在他身上。
+            </div>
+            <div class="font-2">能力：他拥有的财富是我们想象不到的。除了表面上的那些资产之外，更看重的则是他那天才般的头脑。初期的斯塔克靠的制造军火获得利润，在经历那次事件后，决定舍弃军火，改换新能源。而新能源也确实是发展的趋势。
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="font" style="width: 1200px;">新闻动态 </div>
+    <div class="div3">
+        <div>
+            <div class="div3-1"><img src="img/3-1.png">
+                <div class="new-font">热点新闻一</div>
+                <div class="new-font1">
+                    死亡之海”的库布其沙漠成为全球荒漠化防治典范，一度严重沙化的科尔沁草原重披绿装，曾经的“不毛之地”毛乌素沙地筑起祖国北疆的“绿色长城”，昔日“狂风一起，黄沙漫天”的内蒙古多伦县成为京津冀地区人们青睐的避暑胜地……
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="div3-1"><img src="img/3-2.png">
+                <div class="new-font">热点新闻二</div>
+                <div class="new-font1">“人类只有一个地球家园。荒漠化防治是关系人类永续发展的伟大事业。”党的十八大以来，各地区、各部门深入贯彻习近平生态文明思想，牢固树立绿水青山就是金山银山理念，统筹山水林田湖草沙系统治理</div>
+            </div>
+        </div>
+        <div>
+            <div class="div3-1"><img src="img/3-3.png">
+                <div class="new-font">热点新闻三</div>
+                <div class="new-font1">德为立身之本，从政之基。坚持以人民为中心，以百姓心为心，是我们党一以贯之的价值理念，也是党员干部必须坚守的道德准则。</div>
+            </div>
+        </div>
+        <div>
+            <div class="div3-1"><img src="img/3-4.png">
+                <div class="new-font">热点新闻四</div>
+                <div class="new-font1">
+                    习近平总书记在青海考察时指出：“要崇尚造福人民的公德，广大党员、干部要站稳人民立场，始终同人民风雨同舟、生死与共，勇于担当、积极作为，切实把造福人民作为最根本的职责。”语重心长的话语，映照着深厚的为民情怀，给人以深刻的启示。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="div4">
+        <div class="div4-1"><img src="img/4-1.png" style="height: 200px; width: 200px;">
+            <div>福州闽江学院</div>
+        </div>
+        <div class="div4-1"><img src="img/4-2.png" style="height: 200px; width: 200px;">
+            <div>23123412@qq.com</div>
+        </div>
+        <div class="div4-1"><img src="img/4-3.png" style="height: 200px; width: 200px;">
+            <div>023-3456-7891</div>
+        </div>
+        <div class="div4-1" style="margin-top: 20px;"><img src="img/4-4.png" style="height: 250px; width: 250px;">
+            <div class="flor-font">扫一扫，加入联盟</div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="div4-2">
+            <div class="div4-3">版权所有&copy;复仇者联盟</div>
+        </div>
+    </div>
+</body>
+
+</html>
